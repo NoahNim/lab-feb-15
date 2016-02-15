@@ -19,3 +19,13 @@ function sumAndMultiply(a, b, c){
   console.log('The numbers ' + a + ' and ' + b + ' and ' + c + ' have a product of ' + themulti2);
   return [thesum2, themulti2];
 }
+
+function sumArray(a){
+  var theTotal = 0;
+  for(var i = 0; i < a.length; i++){
+    theTotal += a[i]
+  }
+  console.table(a);
+  console.log(a + ' was passed as an array of numbers, and ' + theTotal + ' is their sum')
+  return theTotal
+}
