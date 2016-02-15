@@ -2,12 +2,20 @@
 
 function sum(a, b){
   var thesum = a + b
-  console.log('The sum of ' + a + ' and ' + b + ' is ' + thesum);
+  // console.log('The sum of ' + a + ' and ' + b + ' is ' + thesum);
   return a + b;
 }
 
 function multiply(a, b){
-  var themulti = a*b
-  console.log('The product of ' + a + ' and ' + b + ' is ' + themulti)
-  return a*b
+  var themulti = a*b;
+  // console.log('The product of ' + a + ' and ' + b + ' is ' + themulti);
+  return a*b;
+}
+
+function sumAndMultiply(a, b, c){
+  var thesum2 = sum(a, b) + c;
+  var themulti2 = multiply(a, b)*c;
+  console.log(a + ' and ' + b + ' and ' + c + ' have a sum of ' + thesum2);
+  console.log('The numbers ' + a + ' and ' + b + ' and ' + c + ' have a product of ' + themulti2);
+  return [thesum2, themulti2];
 }
